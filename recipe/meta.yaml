@@ -14,12 +14,12 @@ build:
     - logfire = logfire.cli:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
     - python >=3.8
-    - poetry-core >=1.0.0
+    - hatchling
     - pip
   run:
     - python >=3.8
@@ -41,8 +41,10 @@ test:
     - pip
 
 about:
-  home: https://pypi.org/project/logfire/
-  summary: Coming soon...
+  home: https://github.com/pydantic/logfire
+  dev_url: https://github.com/pydantic/logfire
+  doc_url: https://docs.pydantic.dev/logfire
+  summary: The best Python observability tool! 🪵🔥
   license: MIT
   license_file: LICENSE
 
