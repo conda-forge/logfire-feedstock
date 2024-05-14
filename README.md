@@ -3,11 +3,15 @@ About logfire-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/logfire-feedstock/blob/main/LICENSE.txt)
 
-Home: https://pypi.org/project/logfire/
+Home: https://github.com/pydantic/logfire
 
 Package license: MIT
 
-Summary: Coming soon...
+Summary: The best Python observability tool! 🪵🔥
+
+Development: https://github.com/pydantic/logfire
+
+Documentation: https://docs.pydantic.dev/logfire
 
 Current build status
 ====================
