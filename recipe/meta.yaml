@@ -1,5 +1,5 @@
 {% set name = "logfire" %}
-{% set version = "0.48.0" %}
+{% set version = "0.48.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/logfire-{{ version }}.tar.gz
-  sha256: baebece8d35184ec1d3649c51b043132d07eed5fbcc170fee887ef76303b8bbf
+  sha256: b3fcc52590cf20c2df7c4788576ed10f47efd47bacb418c16c65778d94478baf
 
 build:
   entry_points:
