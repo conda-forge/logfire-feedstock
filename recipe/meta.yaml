@@ -1,5 +1,5 @@
 {% set name = "logfire" %}
-{% set version = "3.1.0" %}
+{% set version = "3.6.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/logfire-{{ version }}.tar.gz
-  sha256: 2032022db1c996ccaee14ae4eb704c83bc7cf423982bd8e160000a8ca8753c58
+  sha256: 93b11d94ad1a19a8bfc1fd97b40ecc3c919a3edc6a5e51cb2a153e64cd04aa9e
 
 build:
   entry_points:
@@ -22,11 +22,11 @@ requirements:
     - hatchling
     - pip
   run:
+    - python >={{ python_min }}
     - typing_extensions >=4.1.0
     - executing >=2.0.1
-    - python >={{ python_min }}
-    - opentelemetry-sdk >=1.21.0
-    - opentelemetry-exporter-otlp-proto-http >=1.21.0
+    - opentelemetry-sdk >=1.21.0,<1.31.0
+    - opentelemetry-exporter-otlp-proto-http >=1.21.0,<1.31.0
     - opentelemetry-instrumentation >=0.41b0
     - rich >=13.4.2
     - protobuf >=4.23.4
