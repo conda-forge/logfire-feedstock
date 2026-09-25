@@ -1,5 +1,5 @@
 {% set name = "logfire" %}
-{% set version = "5.1.0" %}
+{% set version = "5.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/logfire-{{ version }}.tar.gz
-  sha256: edf6c7d33c00214e11c2cdc567eb53051be36289747091e8bb910527e5970bea
+  sha256: 7f9fc158988be37559045b054f278608d9fdc06bd9f875515ea6476bf260cb23
 
 build:
   entry_points:
