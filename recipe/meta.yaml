@@ -1,5 +1,5 @@
 {% set name = "logfire" %}
-{% set version = "5.1.1" %}
+{% set version = "5.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/logfire-{{ version }}.tar.gz
-  sha256: 7f9fc158988be37559045b054f278608d9fdc06bd9f875515ea6476bf260cb23
+  sha256: 5fb9ddda303759766e86f5704a1ae96f3a0072906d52e21fbaad2e3c3b03f823
 
 build:
   entry_points:
@@ -22,12 +22,15 @@ requirements:
     - hatchling
     - pip
   run:
+    - opentelemetry-api >=1.39.0,<1.46.0
+    - opentelemetry-semantic-conventions >=0.60b0,<0.67b0
+    - requests >=2.31.0
     - typing_extensions >=4.13.0
     - executing >=2.0.1
     - python >=3.8
-    - opentelemetry-sdk >=1.39.0,<1.45.0
-    - opentelemetry-exporter-otlp-proto-http >=1.39.0,<1.45.0
-    - opentelemetry-instrumentation >=0.41b0
+    - opentelemetry-sdk >=1.39.0,<1.46.0
+    - opentelemetry-exporter-otlp-proto-http >=1.39.0,<1.46.0
+    - opentelemetry-instrumentation >=0.41b0,<0.67b0
     - rich >=13.4.2
     - protobuf >=4.23.4
     - typing-extensions >=4.1.0
